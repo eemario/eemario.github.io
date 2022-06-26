@@ -2,6 +2,6 @@
 ## Example: a typical script with several problems
 for f in $(glob -- *.m3u)
 do
-  grep -qi "hq.*mp3" $f \
+  grep -qi "hq.*mp3" "$f" \
     && echo "Playlist $f contains a HQ file in mp3 format"
 done
